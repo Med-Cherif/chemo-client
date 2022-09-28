@@ -2,6 +2,8 @@ import { createTheme } from "@mui/material";
 import gray from "@mui/material/colors/grey"
 
 const theme = createTheme({
+    components: {
+    },
     palette: {
         primary: {
             main: '#141527',

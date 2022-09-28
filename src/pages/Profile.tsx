@@ -30,8 +30,6 @@ const Profile = () => {
             <div style={{ position: 'relative' }}>
                 <ProfileHeader />
                 <div style={{ padding: '25px 50px 70px' }}>
-                    <ProfileIntroduction />
-                    {/* <ProfileTimelineType /> */}
                     <TabsContainer>
                         <Tabs
                             value={value}

@@ -1,7 +1,6 @@
 import { styled, Stack, Typography, Paper } from '@mui/material';
 
 const IntroductionWrapper = styled(Paper)(({ theme }) => ({
-    background: theme.palette.primary.main,
     padding: 16,
 }))
 

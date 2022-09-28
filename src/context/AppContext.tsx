@@ -6,6 +6,17 @@ const AppProvider = ({ children }: { children: JSX.Element }) => {
 
     const [sidebarVisible, setSidebarVisible] = useState(false);
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+
+    const closeModal = (e: any) => {
+        if (!e.target) return;
+        if (e.target.id === 'modal') {
+            setIsModalOpen(false)
+        };
+    };
+
     // const [searchContentWidth, setSearchContentWidth] = useState(0);
     const searchContentRef = useRef<HTMLDivElement | null>(null)
 
@@ -18,6 +29,9 @@ const AppProvider = ({ children }: { children: JSX.Element }) => {
             searchContentRef,
             openSidebar,
             closeSidebar,
+            isModalOpen,
+            openModal,
+            closeModal
         }}>
             {children}
         </AppContext.Provider>
@@ -27,6 +41,9 @@ const AppProvider = ({ children }: { children: JSX.Element }) => {
 export default AppProvider
 
 interface GlobalState {
+    isModalOpen: boolean
+    openModal: () => void
+    closeModal: () => void
     sidebarVisible: boolean
     searchContentRef: React.MutableRefObject<HTMLDivElement | null>
     openSidebar: () => void

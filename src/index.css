@@ -19,3 +19,18 @@ a {
 ul {
   list-style: none;
 }
+
+.stories-avatars-list {
+  overflow-x: auto;
+}
+
+.stories-avatars-list::-webkit-scrollbar {
+  background: #ccc;
+  border-radius: 30px;
+  height: 12px;
+}
+
+.stories-avatars-list::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: gray;
+}

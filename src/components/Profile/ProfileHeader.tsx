@@ -1,8 +1,15 @@
-import { styled, Avatar, Stack, Typography } from '@mui/material';
+import { styled, Avatar, Stack, Typography, TypographyTypeMap } from '@mui/material';
+import { OverridableComponent } from '@mui/material/OverridableComponent';
 import ProfileHeaderAction from './ProfileHeaderAction';
 
 const img = require('../../assets/images/cover.jpg');
 const profileImg = require('../../assets/images/my-pic.jpg')
+
+const bio = `
+Hello everyone i hope you're fine.
+i'm mohamed cherif
+a software frontend developer
+`
 
 const CoverPictureWrapper = styled('div')(() => ({
     height: 220,
@@ -49,6 +56,17 @@ const ProfileHeader = () => {
                         </div>
                         <ProfileHeaderAction />
                     </Stack>
+
+                    <Typography 
+                        variant="body2" 
+                        component="pre"   
+                        sx={{
+                            marginTop: 1
+                        }}
+                    >
+                        {bio.trim()}
+                    </Typography>
+
                 </ProfilePersonelInfo>
                 
             </Stack>

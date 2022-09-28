@@ -5,7 +5,7 @@ const ProfileHeaderAction = () => {
     
     return (
         <div>
-
+            <Button variant="contained" color="success">Follow</Button>
         </div>
     )
 }

@@ -45,7 +45,9 @@ const Sidebar = () => {
             }}
         >
             <Grid container justifyContent="space-between" alignItems="center" p={2}>
-                <Typography variant="h4">Chemo</Typography>
+                <Typography variant="h4">
+                    <Link to="/">Chemo</Link>
+                </Typography>
                 <CloseIcon onClick={closeSidebar} sx={{ cursor: 'pointer', display: { lg: 'none' } }} />
             </Grid>
 

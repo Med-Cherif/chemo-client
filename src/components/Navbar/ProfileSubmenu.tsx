@@ -1,7 +1,6 @@
 import { MenuItem, styled } from '@mui/material'
-import React from 'react'
-import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
+import X from "@mui/icons-material/AccountCircle"
 import { Link } from 'react-router-dom';
 
 const MenuItemStyled = styled(MenuItem)(({ theme }) => ({
@@ -20,7 +19,7 @@ const ProfileSubmenu = () => {
         <>
             <MenuItemStyled>
                 <LinkStyled to="/profile/123">
-                    <LogoutIcon sx={{ mr: 1 }} /> Logout
+                    <X sx={{ mr: 1 }} /> Profile
                 </LinkStyled>
             </MenuItemStyled>
             <MenuItemStyled>
