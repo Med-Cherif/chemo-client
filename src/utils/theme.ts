@@ -7,6 +7,7 @@ const theme = createTheme({
     palette: {
         primary: {
             main: '#141527',
+            contrastText: "#000",
         },
         secondary: {
             main: "#868799"
@@ -15,13 +16,11 @@ const theme = createTheme({
             default: '#323443',
         },
         text: {
-            primary: '#fff',
+            primary: '#000',
             secondary: "#868799",
             dark: '#000'
         },
-        
     },
-    
 })
 
 export default theme

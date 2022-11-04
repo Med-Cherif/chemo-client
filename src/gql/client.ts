@@ -1,7 +1,7 @@
 import { GraphQLClient } from "graphql-request";
 
-const API_URL = "http://localhost:4000"
+const API_URL = "http://localhost:4000/graphql"
 
-const client = new GraphQLClient(API_URL)
+const userClient = new GraphQLClient(API_URL)
 
-export default client;
+export default userClient;

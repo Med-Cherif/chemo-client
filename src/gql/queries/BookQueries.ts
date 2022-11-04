@@ -17,3 +17,17 @@ export const ADD_BOOK = gql`
         }
     }
 `
+
+export const GET_AUTHOR_OR_BOOK = gql`
+    query($resultValue2: String!) {
+        result(value: $resultValue2) {
+            __typename
+            ... on Book {
+            title
+            }
+            ... on Author {
+            name
+            }
+        }
+    }
+`
